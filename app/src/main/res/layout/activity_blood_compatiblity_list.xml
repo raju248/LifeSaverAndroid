@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BloodCompatibilityListActivity"
+    style="@style/allcolor"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="0dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="25dp"
+        android:text="Blood Compatibility List" />
+
+
+    <TableLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:stretchColumns="*"
+        android:background="#180D0D"
+        >
+
+        <TableRow
+            android:layout_margin="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:text="Blood Group"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:text="Gives Blood\nto these\ngroups"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:layout_height="match_parent"
+                android:text="Receives Blood\nfrom these\ngroups\n"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="A+"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="AB+, A+"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O-, O+, A+, A-"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="A-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="AB-, AB+, A-, A+"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="O-, A-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="B+"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="B+, AB+"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O-, O+, B+, B-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="B-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="B-, B+, AB-, AB+"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O-, B-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O+"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="AB+, A+, B+, O+"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O-, O+"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="All"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="AB+"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="AB+"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="All"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/cell_shape">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="AB-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="AB+, AB-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O-, A-, B-, AB-"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:textAlignment="center"/>
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</RelativeLayout>
